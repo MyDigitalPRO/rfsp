@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['ibrahim-ivanko@mdtlpr.com']
   spec.summary       = %q{Russian Freelance Site Parser}
   spec.description   = %q{Get projects from www.fl.ru www.weblancer.net freelansim.ru}
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/MyDigitalPRO/rfsp'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_runtime_dependency 'rest_client', '~> 1.0'
+  spec.add_runtime_dependency 'rest-client', '~> 1.0'
   spec.add_runtime_dependency 'nokogiri', '~> 1.0'
   spec.add_runtime_dependency 'feedjira', '~> 1.0'
 

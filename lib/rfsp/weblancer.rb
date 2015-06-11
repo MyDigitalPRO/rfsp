@@ -3,12 +3,13 @@ require 'ostruct'
 require 'nokogiri'
 
 class RFSP::Weblancer
-  RSS_URI = 'http://www.weblancer.net/rss/projects.rss'
+  RSS_URI = 'http://www.weblancer.net/rss/jobs.rss'
 
   class << self
 
     def parse_rss
       projects = []
+      # binding.pry
       feed.entries.each do |e|
         p = OpenStruct.new
         p.site = 'weblancer'
